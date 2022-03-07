@@ -1,5 +1,5 @@
 let handler = function (m) {
-  // this.sendContact(m.chat, '6285759662798', 'Lord Botz (Bot Whatsapp)', '6285759662798', 'AraaChanm (Owner Real) 'm)
+  // this.sendContact(m.chat, '6285759662798', 'Araa Botz (Bot Whatsapp)', '6285759662798', 'AraaChanm (Owner Real) 'm)
   let contacts = []
   for (let owner of Object.entries(global.Owner).filter(v => v[1].isCreator)) {
     contacts.push(...[owner[0], (owner[1].name || conn.getName(owner[0]) || '')])
